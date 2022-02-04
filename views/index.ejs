@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat com socket.io</title>
-    <script src="localhost:3000/assets/modules/channel-web/inject.js"></script>
+    <script src="http://localhost:3000/assets/modules/channel-web/inject.js"></script>
+    <title>BotPress Teste</title>
+    
 </head>
 <body>
-    <script>
-        window.botpressWebChat.init({ host: 'http://localhost:3000/', botId: '<exemplobot>' })
-    </script>
+
     <h1>Chat</h1>
+
+
+
+    <script>
+        window.botpressWebChat.init({
+            host: 'http://localhost:3000',
+            botId: '123',
+            extraStylesheet: 'http://localhost:3000//assets/modules/channel-web/assets/infa-style.css'
+        })
+    </script>
 </body>
+
 </html>
